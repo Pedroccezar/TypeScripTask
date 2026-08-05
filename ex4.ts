@@ -1,0 +1,16 @@
+interface IUsuario {
+    nome: string;
+    email: string;
+    exibirInfo(): string;
+}
+
+const usuario: IUsuario = {
+    nome: 'Pedro',
+    email: 'pedro@gmail.com',
+
+    exibirInfo() {
+        return `Nome: ${this.nome} - Email: ${this.email}`;
+    }
+}
+
+console.log(usuario.exibirInfo());
